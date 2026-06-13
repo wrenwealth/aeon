@@ -75,8 +75,8 @@ skills:
       schedule: "*/30 * * * *",
       var: ""
     } # every 30 minutes — fire on tracked-token ATH, ±20% 1h move, or operator-set target crossing (var=target_price,target_price2,...). Silent on normal runs. Set var=dry-run to skip notify.
-  market-context: { enabled: false, schedule: "0 13 * * *" } # fetch live crypto macro data, update memory
-  narrative-tracker: { enabled: false, schedule: "30 13 * * *" } # track rising/peaking/fading narratives
+  market-context: { enabled: true, schedule: "0 13 * * *" } # fetch live crypto macro data, update memory
+  narrative-tracker: { enabled: true, schedule: "30 13 * * *" } # track rising/peaking/fading narratives
   polymarket-comments: { enabled: false, schedule: "0 13 * * *" } # top comments from trending Polymarket markets
   unlock-monitor: { enabled: false, schedule: "0 10 * * 1" } # weekly token unlock/vesting tracker
   aixbt-pulse: { enabled: false, schedule: "0 9,21 * * *" } # twice daily — AIXBT free grounding endpoint: cross-domain market pulse (crypto/macro/tradfi/geopolitics) with taxonomy refresh
